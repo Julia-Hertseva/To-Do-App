@@ -9,15 +9,44 @@ body {
 }
 
 .notification {
-  transition-property: opacity, min-height;
-  transition-duration: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   min-height: 36px;
+  padding: 0.75rem;
+  transition: all 0.4s ease-in-out;
+  opacity: 1;
+  max-height: 100px;
+  overflow: hidden;
+  background-color: #f9e8e8;;
+  color: #cc7a7a;
 }
 
 .notification.hidden {
   min-height: 0;
+  padding: 0;
+  margin: 0;
   opacity: 0;
+  max-height: 0;
+  border-width: 0;
   pointer-events: none;
+}
+
+.delete {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  flex-shrink: 0;
+  margin-left: 10px;
+  background-color: #a68d81;
+
+  &:hover {
+      background-color: #9c7c64;
+    }
+}
+
+.notification.hidden .delete {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
 }
 
 @import "./todoapp";

@@ -21,7 +21,6 @@ export const Footer: React.FC<Props> = ({
 }) => {
   return (
     <footer className="todoapp__footer" data-cy="Footer">
-      {/* Hide the footer if there are no todos */}
       <span className="todo-count" data-cy="TodosCounter">
         {activeTodosCount} items left
       </span>
