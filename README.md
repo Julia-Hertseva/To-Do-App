@@ -4,8 +4,7 @@ A fully functional, single-page Todo application built with React and TypeScript
 
 The application uses an external REST API to persist data, simulating a real-world environment where data is managed remotely.
 
-🔗 **Live Demo:** https://Julia-Hertseva.github.io/To-Do-App/
-📂 **Repository:** https://github.com/Julia-Hertseva/To-Do-App
+👉 **[Live Demo](https://Julia-Hertseva.github.io/To-Do-App/)**
 
 ---
 
@@ -13,39 +12,31 @@ The application uses an external REST API to persist data, simulating a real-wor
 
 This application provides a robust task-management experience with smooth UI interactions and reliable API synchronization.
 
-🔹 Full CRUD Support
+### 🔄 Full CRUD Functionality
 
-Create — Add new todos with an optimistic UI preview while awaiting API confirmation
+- **Create** — add new todos with an optimistic UI preview while awaiting API confirmation
+- **Read** — load and render todos from the backend on startup
+- **Update** — double-click to edit titles or toggle completion status
+- **Delete** — fast removal without UI freeze
 
-Read — Load and render todos from the backend on startup
 
-Update — Double-click to edit titles or toggle completion status
+### 🧠 Smart Productivity Tools
 
-Delete — Remove individual todos seamlessly
+- Smart Filtering: **All / Active / Completed**
+- **Bulk actions**:
+  - Toggle All — mark all tasks as completed or active in one click
+  - Clear Completed — remove all finished items instantly
 
-🔹 Smart Filtering: Switch between All, Active, and Completed tasks
+### ✨ Polished User Experience
 
-🔹 Bulk Actions for Productivity
+- Loading indicators for async requests
+- Optimistic updates with visual feedback (e.g., dim while updating)
+- Dismissible error messages
 
-Toggle All — Mark all tasks as completed or active in one click
+### ⌨️ Keyboard-friendly Editing
 
-Clear Completed — Remove all finished items instantly
-
-🔹 Polished User Experience
-
-Loading State — Shows a subtle loader while fetching data or processing requests
-
-Optimistic Updates — Items visually react to API operations (e.g., dim while updating)
-
-Error Handling — Contextual error messages appear and can be manually dismissed
-
-Keyboard-friendly Editing —
-
-Enter → save changes
-
-Escape → cancel
-
-Blur → auto-apply edits
+- **Enter** → save changes
+- **Escape** → cancel
 
 ---
 
